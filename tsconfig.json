@@ -9,6 +9,10 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+<<<<<<< HEAD
+=======
+    "skipLibCheck": true,
+>>>>>>> db3d793ecd7d40be485ee6eced34bc376af91385
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,

@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "my-noc-final": {
+=======
+    "test": {
+>>>>>>> db3d793ecd7d40be485ee6eced34bc376af91385
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +21,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/my-noc-final",
+=======
+            "outputPath": "dist/test",
+>>>>>>> db3d793ecd7d40be485ee6eced34bc376af91385
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -30,10 +38,21 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.scss",
               "./node_modules/noc/style.css"
             ],
             "scripts": []
+=======
+              "src/styles.scss"
+            ],
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "server.ts"
+            }
+>>>>>>> db3d793ecd7d40be485ee6eced34bc376af91385
           },
           "configurations": {
             "production": {
@@ -63,10 +82,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "my-noc-final:build:production"
             },
             "development": {
               "buildTarget": "my-noc-final:build:development"
+=======
+              "buildTarget": "test:build:production"
+            },
+            "development": {
+              "buildTarget": "test:build:development"
+>>>>>>> db3d793ecd7d40be485ee6eced34bc376af91385
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +100,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "buildTarget": "my-noc-final:build"
+=======
+            "buildTarget": "test:build"
+>>>>>>> db3d793ecd7d40be485ee6eced34bc376af91385
           }
         },
         "test": {
@@ -98,8 +128,11 @@
         }
       }
     }
+<<<<<<< HEAD
   },
   "cli": {
     "analytics": "b6551f64-da32-4e82-b680-a36c5243c038"
+=======
+>>>>>>> db3d793ecd7d40be485ee6eced34bc376af91385
   }
 }

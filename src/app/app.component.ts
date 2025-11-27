@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+<<<<<<< HEAD
 import { TableTplModule } from 'noc/table';
 import { NestedTableComponent, DetailItem } from './nested-table/nested-table.component';
 import { GridColumn } from 'noc/table';
@@ -57,10 +58,18 @@ const DATE_DIMENSION_DATA: DateDimensionItem[] = [
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, TableTplModule, NestedTableComponent],
+=======
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, RouterOutlet],
+>>>>>>> db3d793ecd7d40be485ee6eced34bc376af91385
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+<<<<<<< HEAD
   title = 'my-noc-final';
   
   // 使用GridColumn定义表格列 - 按需求调整为"空白+日期+总数量+状态"格式
@@ -98,3 +107,7 @@ export class AppComponent {
     // 这里可以添加其他自定义逻辑，比如日志记录、状态更新等
   }
 }
+=======
+  title = 'test';
+}
+>>>>>>> db3d793ecd7d40be485ee6eced34bc376af91385
