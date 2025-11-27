@@ -1,0 +1,36 @@
+<div class="container">
+
+  <!-- 自适应表格容器 -->
+  <div class="table-container-wrapper">
+    <!-- 使用 noc-table-tpl 组件实现展开功能 -->
+    <noc-table-tpl 
+    [data]="data"
+    [columns]="columns"
+    [paginator]="true"
+    [useSort]="true"
+    [select]="false"
+    [isLoading]="false"
+    [noDataText]="'暂无数据'"
+    [classname]="'main-noc-table'"
+    [length]="data.length"
+    [pageIndex]="0"
+    [pageSize]="10"
+    [pageSizeOpts]="[5, 10, 20]"
+    [expandTpl]="expandTpl"
+    (toggleChange)="onToggleRow($event)"
+  >
+    </noc-table-tpl>
+  </div>
+  
+  <!-- 自定义展开模板 -->
+  <ng-template #expandTpl let-row>
+    <div class="expanded-row-content">
+      <div class="expanded-table-wrapper">
+        <app-nested-table 
+          [dateData]="row" 
+          [detailData]="row.detailData">
+        </app-nested-table>
+      </div>
+    </div>
+  </ng-template>
+</div>

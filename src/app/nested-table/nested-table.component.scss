@@ -1,0 +1,40 @@
+/* 极简嵌套表格样式 */
+
+/* 确保嵌套表格正确显示，不被其他元素遮挡 */
+.nested-noc-table {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  overflow-x: auto;
+  display: block;
+  
+  th[noc-header-cell] {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 50;
+    border-bottom: 1px solid #e8e8e8;
+    font-weight: 600;
+    min-width: 100px;
+    padding: 12px;
+  }
+  
+  td[noc-cell] {
+    padding: 12px;
+    min-width: 100px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+  .nested-noc-table {
+    font-size: 14px;
+  }
+  
+  .nested-noc-table th[noc-header-cell],
+  .nested-noc-table td[noc-cell] {
+    padding: 8px 6px;
+    min-width: 80px;
+  }
+}
